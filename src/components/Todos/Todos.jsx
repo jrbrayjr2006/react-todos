@@ -2,9 +2,10 @@ import React from 'react';
 import Todo from './Todo/Todo';
 
 const Todos = () => {
+    let numTodos = 0;
     return (
         <div>
-            <h1>Todos</h1>
+            <p>There are {numTodos} todos</p>
             <Todo />
         </div>
     );
