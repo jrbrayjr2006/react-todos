@@ -1,20 +1,19 @@
 import React from 'react';
 import { shallow, configure } from 'enzyme';
-//import { expect } from 'chai';
 import Todos from './Todos';
+import Todo from './Todo/Todo';
 import Adapter from 'enzyme-adapter-react-16';
-import { isTSAnyKeyword, exportAllDeclaration } from '@babel/types';
+import { expect } from 'chai';
 
 configure({ adapter: new Adapter() });
 
 describe('Suite of tests for <Todos />', () => {
-    let wrapper;
-
     beforeEach(() => {
-        wrapper = shallow(<Todos />);
+        //const wrapper = shallow(<Todos />);
     });
 
     it('Render at least 1 Todo', () => {
-        expect(1 == 1).toBe(true);
+        const wrapper = shallow(<Todos />);
+        expect(wrapper.find(Todo)).to.have.lengthOf(1);
     });
 });

@@ -68,6 +68,14 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
+### Styling
+
+Install the `foundation-sites` style dependency:  
+`npm install foundation-sites --save`
+
+Import the style into the `index.js` file: 
+`import 'foundation-sites/dist/css/foundation.min.css'`
+
 ## Testing
 
 Install jestjs:  `npm install --save-dev jest`
