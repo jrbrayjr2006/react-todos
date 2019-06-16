@@ -76,6 +76,14 @@ Install the `foundation-sites` style dependency:
 Import the style into the `index.js` file: 
 `import 'foundation-sites/dist/css/foundation.min.css'`
 
+`import PropTypes from 'prop-types'`
+
+### Additional Dependencies
+
+Provide defacto documentation for props in a component.
+
+`npm install --save prop-types
+
 ## Testing
 
 Install jestjs:  `npm install --save-dev jest`
