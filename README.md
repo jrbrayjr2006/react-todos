@@ -82,7 +82,7 @@ Import the style into the `index.js` file:
 
 Provide defacto documentation for props in a component.
 
-`npm install --save prop-types
+`npm install --save prop-types`
 
 ## Testing
 
