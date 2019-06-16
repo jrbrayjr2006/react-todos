@@ -76,13 +76,27 @@ Install the `foundation-sites` style dependency:
 Import the style into the `index.js` file: 
 `import 'foundation-sites/dist/css/foundation.min.css'`
 
-`import PropTypes from 'prop-types'`
-
 ### Additional Dependencies
 
 Provide defacto documentation for props in a component.
 
 `npm install --save prop-types`
+
+Import the dependency into your component.
+
+`import PropTypes from 'prop-types'`
+
+Use the PropTypes to enforce type checking on the props.
+
+```javascript
+MyComponent.PropTypes {
+    myprop1: PropTypes.string
+    myprop2: PropTypes.func
+}
+```
+
+
+Use the Prop
 
 ## Testing
 
