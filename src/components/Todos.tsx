@@ -1,22 +1,33 @@
 import { useState } from 'react';
 import Todo from './Todo';
+import MakeTodo from './MakeTodo';
 
-const TODO_ARRAY = ["My First Todo", "My Second Todo"];
+const TODO_ARRAY = [
+    { "id": 1, "title": "My First Todo" }
+];
 
 export default function Todos() {
-    const [todoList, setTodoList] = useState(TODO_ARRAY);
-    function addItemToTodoList(item: string) {
-        console.log("add new Todo to list of Todos");
-        setTodoList([...todoList, item]);
+    let todoList = TODO_ARRAY;
+    let todoIndex = todoList.length;
+
+    const [allTodos, setAllTodos] = useState(TODO_ARRAY);
+
+    const handleClick = (todoInputText: string) => {
+        let nextIndex = todoIndex + 1;
+        console.log(allTodos);
+        todoList.push({"id": nextIndex, "title": todoInputText });
+        console.log({"id": nextIndex, "title": "some text here" });
+        setAllTodos({...allTodos, [nextIndex]: { "id": nextIndex, "title": "some text here" }}); 
     }
 
     return (
         <section>
             <h2>Todos</h2>
-            <button onClick={() => addItemToTodoList("New item")}>Add Todo</button>
+            <MakeTodo customOnClick={handleClick} />
+            <br />
             <ul>
                 {todoList.map(todo => 
-                    <li><Todo todoText={todo}/></li>
+                    <li key={todo.id}><Todo todoText={todo.title}/></li>
                 )}
             </ul>
         </section>
