@@ -1,3 +1,8 @@
 import React from 'react';
 
-describe('', () => {});
+describe("Render components", () => {
+
+    it("should render the Todos component", () => {
+        //
+    });
+});
