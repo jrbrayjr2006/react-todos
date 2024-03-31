@@ -25,9 +25,9 @@ export default function Todos() {
             <h2>Todos</h2>
             <MakeTodo customOnClick={handleClick} />
             <br />
-            <ul>
+            <ul className='list-group no-bullet'>
                 {todoList.map(todo => 
-                    <li key={todo.id}><Todo todoText={todo.title}/></li>
+                    <li key={todo.id} className='list-group-item'><Todo todoText={todo.title}/></li>
                 )}
             </ul>
         </section>
