@@ -44,3 +44,35 @@ npm run dev
 
 yarn dev
 ```
+
+## Testing
+Some additional libraries and configuration must be added for Jest to support tests written using TypeScript.
+
+### Testing with Jest and TypeScript
+
+Babel must be installed and configured to support TypeScipt in Jest unit tests.
+
+```cmd
+npm install --save-dev jest @types/jest @babel/preset-typescript
+```
+
+Add the `ts-jest` preprocessor to the project.
+
+```cmd
+npm install --save-dev ts-jest
+
+npm install --save-dev @jest/globals
+
+npm install --save-dev ts-node
+```
+
+### Support for CSS in Testing
+
+```cmd
+npm install --save-dev jest-transform-css
+```
+
+## References
+
+- [Foundation Todo List Card Example](https://get.foundation/building-blocks/blocks/todo-list-card.html)
+- [Using TypeScript with Jest](https://jestjs.io/docs/getting-started#using-typescript)
