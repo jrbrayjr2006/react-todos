@@ -54,6 +54,10 @@ Babel must be installed and configured to support TypeScipt in Jest unit tests.
 
 ```cmd
 npm install --save-dev jest @types/jest @babel/preset-typescript
+
+npm install -D jsdom
+
+npm install -D jest-environment-jsdom
 ```
 
 Add the `ts-jest` preprocessor to the project.
@@ -76,3 +80,5 @@ npm install --save-dev jest-transform-css
 
 - [Foundation Todo List Card Example](https://get.foundation/building-blocks/blocks/todo-list-card.html)
 - [Using TypeScript with Jest](https://jestjs.io/docs/getting-started#using-typescript)
+- [Installing Jest for Testing in Your Vite-React TypeScript Project. A Step-by-Step Guide.](https://dev.to/hannahadora/jest-testing-with-vite-and-react-typescript-4bap)
+- [placeholder](placeholder)

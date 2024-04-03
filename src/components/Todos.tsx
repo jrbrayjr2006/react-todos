@@ -1,7 +1,8 @@
+import React from 'react';
 import { useState } from 'react';
 import Todo from './Todo';
 import MakeTodo from './MakeTodo';
-import './Todos.css';
+// import './Todos.css';
 
 const TODO_ARRAY = [
     { "id": 1, "title": "My First Todo" }
