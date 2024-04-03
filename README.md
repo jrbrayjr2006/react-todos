@@ -78,7 +78,7 @@ npm install --save-dev jest-transform-css
 
 ## References
 
-- [Foundation Todo List Card Example](https://get.foundation/building-blocks/blocks/todo-list-card.html)
+- [Configuring Jest](https://jestjs.io/docs/configuration)
 - [Using TypeScript with Jest](https://jestjs.io/docs/getting-started#using-typescript)
 - [Installing Jest for Testing in Your Vite-React TypeScript Project. A Step-by-Step Guide.](https://dev.to/hannahadora/jest-testing-with-vite-and-react-typescript-4bap)
-- [placeholder](placeholder)
+- [Foundation Todo List Card Example](https://get.foundation/building-blocks/blocks/todo-list-card.html)
