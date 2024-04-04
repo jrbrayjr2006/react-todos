@@ -4,9 +4,7 @@ import Todo from './Todo';
 import MakeTodo from './MakeTodo';
 // import './Todos.css';
 
-const TODO_ARRAY = [
-    { "id": 1, "title": "My First Todo" }
-];
+const TODO_ARRAY: { id: number, title: string }[] = [];
 
 export default function Todos() {
     let todoList = TODO_ARRAY;
@@ -27,25 +25,15 @@ export default function Todos() {
             <h2>Todos</h2>
             <MakeTodo customOnClick={handleClick} />
             <br />
+            {todoList.length > 0 ? 
             <ul className='list-group no-bullet'>
                 {todoList.map(todo => 
                     <li key={todo.id} className='list-group-item'><Todo todoText={todo.title}/></li>
                 )}
-            </ul>
-            {/* <div data-closable="fade-out" className="todo-list-card card">
-                <div className="card-divider">
-                    <h3>To Do List</h3>
-                    <button className="close-button" data-close>x</button>
-                </div>
-                <div className="card-section">
-                    <ul>
-                    <li><input id="item1" type="checkbox"></input><label htmlFor="item1"></label>Item 1</li>
-                    {todoList.map(todo =>
-                        <li key={todo.id}><Todo todoText={todo.title}/></li>
-                    )}
-                    </ul>
-                </div>
-            </div> */}
+            </ul> : 
+            <div>
+                <span>There are currently no Todos!</span>
+            </div>}
         </section>
     );
 }

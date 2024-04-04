@@ -7,10 +7,15 @@ export default function MakeTodo({ customOnClick }: { customOnClick: (todoInputT
         setTodoText(event.target.value)
     };
 
+    const handleClick = () => {
+        customOnClick(todoText);
+        setTodoText("");
+    }
+
     return (
         <>
             <span>New Todo: </span><input id="todoInput" type="text" onChange={handleInputChange} value={todoText} placeholder="enter todo here" />
-            <button onClick={() => customOnClick(todoText)} className='submit button'>Add Todo</button>
+            <button onClick={() => handleClick()} className='submit button'>Add Todo</button>
         </>
     );
 }

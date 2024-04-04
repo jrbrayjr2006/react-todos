@@ -45,6 +45,12 @@ npm run dev
 yarn dev
 ```
 
+## Additional Dependencies
+
+```cmd
+npm install react-router-dom
+```
+
 ## Testing
 Some additional libraries and configuration must be added for Jest to support tests written using TypeScript.
 
@@ -82,3 +88,4 @@ npm install --save-dev jest-transform-css
 - [Using TypeScript with Jest](https://jestjs.io/docs/getting-started#using-typescript)
 - [Installing Jest for Testing in Your Vite-React TypeScript Project. A Step-by-Step Guide.](https://dev.to/hannahadora/jest-testing-with-vite-and-react-typescript-4bap)
 - [Foundation Todo List Card Example](https://get.foundation/building-blocks/blocks/todo-list-card.html)
+- [React Router](https://reactrouter.com/en/main)
