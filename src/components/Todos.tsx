@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Todo from './Todo';
 import MakeTodo from './MakeTodo';
-// import './Todos.css';
 
 const TODO_ARRAY: { id: number, title: string }[] = [];
 
