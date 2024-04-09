@@ -54,6 +54,10 @@ npm install react-router-dom
 ## Testing
 Some additional libraries and configuration must be added for Jest to support tests written using TypeScript.
 
+```cmd
+npm install --save-dev @testing-library/user-event @testing-library/dom
+```
+
 ### Testing with Jest and TypeScript
 
 Babel must be installed and configured to support TypeScipt in Jest unit tests.
