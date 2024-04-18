@@ -1,0 +1,10 @@
+name: Simple Workflow
+on: workflow-dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # - name: Checkout repository
+      #   uses: actions/checkout@v2
+      - name: Run a one-line script
+        run: echo Hello, world!
