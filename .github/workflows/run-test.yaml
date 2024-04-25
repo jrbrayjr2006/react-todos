@@ -12,3 +12,13 @@ jobs:
       - name: Run unit tests
         run: |
           npm run test
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Simulate Deploy to production
+        run: |
+          echo "Deploying to production..."
+          
