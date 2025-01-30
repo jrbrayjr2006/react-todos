@@ -86,6 +86,12 @@ npm install --save-dev ts-node
 npm install --save-dev jest-transform-css
 ```
 
+## Containerization
+
+Build the docker image with the following command: `docker image build -t react-todos .`
+
+`docker run -p 5173:5173 react-todos`
+
 ## References
 
 - [Configuring Jest](https://jestjs.io/docs/configuration)
@@ -93,3 +99,5 @@ npm install --save-dev jest-transform-css
 - [Installing Jest for Testing in Your Vite-React TypeScript Project. A Step-by-Step Guide.](https://dev.to/hannahadora/jest-testing-with-vite-and-react-typescript-4bap)
 - [Foundation Todo List Card Example](https://get.foundation/building-blocks/blocks/todo-list-card.html)
 - [React Router](https://reactrouter.com/en/main)
+- [Dockerizing the frontend – do it right with React.js + Vite](https://www.innokrea.com/dockerizing-the-frontend-do-it-right-with-react-js-vite/)
+- [Deploy to Azure App Service using GitHub Actions](https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=openid%2Caspnetcore)
