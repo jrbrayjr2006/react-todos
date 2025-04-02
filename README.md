@@ -51,6 +51,27 @@ yarn dev
 npm install react-router-dom
 ```
 
+### Tailwind CSS Depedencies
+Install the Tailwind CSS dependendies using `npm`.
+
+```sh
+npm install tailwindcss @tailwindcss/vite
+```
+
+Add the following `vite.config.ts` configuration:
+
+```js
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+```
+
+Add the following import to the core CSS file:  `@import "tailwindcss";`
+
 ## Testing
 Some additional libraries and configuration must be added for Jest to support tests written using TypeScript.
 
